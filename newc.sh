@@ -12,24 +12,24 @@ else
    if [ $extension == "c" ] 
    then
       touch $nom
-      echo 'création du fichier $nom'
+      echo "création du fichier $nom"
 
-      echo "#include <stdio.h>" > $nom
-      echo "#include <stdlib.h>" >> $nom
-      echo "#include <math.h>" >> $nom
+      echo '#include <stdio.h>' > $nom
+      echo '#include <stdlib.h>' >> $nom
+      echo '#include <math.h>' >> $nom
 
-      echo "  ">> $nom
+      echo '  '>> $nom
 
-      echo "int main (int argc, char** argv)" >> $nom
-      echo "{ ">> $nom
-      echo "  ">> $nom
-      echo "} ">> $nom
+      echo 'int main (int argc, char** argv)' >> $nom
+      echo '{ '>> $nom
+      echo '  '>> $nom
+      echo '} '>> $nom
 
       vim $nom
    elif [ $extension == "tex" ] 
    then 
       touch $nom
-      echo 'création du fichier $nom'
+      echo "création du fichier $nom"
       echo '\documentclass{article}' >> $nom
       echo '\usepackage{fullpage}' >> $nom
       echo '\usepackage{comment}' >> $nom
